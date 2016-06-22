@@ -8,7 +8,11 @@ function injectScript(f) {
 }
 
 inject(function(){
-	var volume = 1; // slider goes 1 to 10
-	soundManager.setVolume(volume * 10); // soundManager goes 1 to 100
+	var volume = 1;
+	// move the slider bar itself
 	angular.element('.vslider').slider('setValue', '' + volume);
+	// then fake the slide event as if the user had moved the slider
+	var event = $.Event('slide');
+	event.value = volume;
+	$('.vslider').trigger(event);
 });
