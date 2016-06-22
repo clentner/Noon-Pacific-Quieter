@@ -7,7 +7,7 @@ function injectScript(f) {
 	script.parentNode.removeChild(script);
 }
 
-inject(function(){
+injectScript(function(){
 	var volume = 1;
 	// move the slider bar itself
 	angular.element('.vslider').slider('setValue', '' + volume);
