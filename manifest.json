@@ -3,9 +3,10 @@
     "name": "Noon Pacific Volume Fix",
     "version": "1.0",
     "description": "Lower the default volume on Noon Pacific",
-    "permissions": ["tabs", "http://noonpacific.com/*"],
+    "permissions": ["tabs", "http://noonpacific.com/*", "storage"],
     "content_scripts" : [{
         "matches" : [ "http://noonpacific.com/*"],
         "js" : ["volume.js"]
-    }]
+    }],
+	"options_page": "options.html"
 }
