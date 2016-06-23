@@ -1,5 +1,5 @@
 {
-	"manifest_version": 2,
+    "manifest_version": 2,
     "name": "Noon Pacific Volume Fix",
     "version": "1.0",
     "description": "Lower the default volume on Noon Pacific",
@@ -8,9 +8,9 @@
         "matches" : [ "http://noonpacific.com/*"],
         "js" : ["volume.js"]
     }],
-	"options_page": "options.html",
-	"options_ui": {
-		"page": "options.html",
-		"chrome_style": true
-	}
+    "options_page": "options.html",
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    }
 }
