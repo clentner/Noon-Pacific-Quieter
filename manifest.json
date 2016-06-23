@@ -8,5 +8,9 @@
         "matches" : [ "http://noonpacific.com/*"],
         "js" : ["volume.js"]
     }],
-	"options_page": "options.html"
+	"options_page": "options.html",
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true
+	}
 }
